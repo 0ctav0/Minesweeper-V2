@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Minesweeper</title>
+	<script src="Minesweeper.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			// new Minesweeper("game", {
+			// 	test : 0
+			// 	// countMines : 3
+			// 	,countCellsX : 8
+			// 	,countCellsY : 8
+			// 	,cellWidth : 64
+			// 	,cellHeight : 64
+			// 	,gameOver : function() {
+			// 		console.log("game over");
+			// 	}
+			// 	,happyEnd : function() {
+			// 		console.log("happy end");
+			// 	}
+			// }).start();
+			new Minesweeper("game2", {
+				test : 0
+				,countCellsX : 20
+				,countCellsY : 15
+				,cellWidth : 32
+				,cellHeight : 32
+				,gameOver : function() {
+					console.log("game2 over");
+				}
+				,happyEnd : function() {
+					console.log("happy end of game2");
+				}
+			}).start();
+		}
+	</script>
+</head>
+<body>
+<!-- 	<h2>Hello my friend!</h2>
+	<p>Try to solve a couple of minesweepers</p> -->
+	<!-- <canvas id='game2'>Sorry friend! Your browswer do not support canvas</canvas> -->
+	<canvas id='game2'></canvas>
+</body>
+</html>
